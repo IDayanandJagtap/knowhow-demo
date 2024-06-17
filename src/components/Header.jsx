@@ -16,9 +16,9 @@ const Header = () => {
     };
 
     return (
-        <nav className="border-t-4 border-t-blue-600 px-8 py-4 flex justify-between items-center shadow-md md:px-20 md:py-6 lg:px-28 xl:px-36 2xl:px-72 md:border-t-8">
+        <nav className="border-t-4 border-t-blue-600 px-8 py-4 flex justify-between items-center shadow-md md:px-20 md:py-4 lg:px-28 xl:px-36 2xl:px-72 md:border-t-6">
             {/* Title/ logo */}
-            <h1 className="text-lg font-bold md:text-2xl lg:text-3xl">
+            <h1 className="text-lg font-bold md:text-2xl lg:text-2xl">
                 KnowHow
             </h1>
 
@@ -27,14 +27,14 @@ const Header = () => {
                 {navLinks.map((link) => (
                     <a
                         key={link.name}
-                        className="text-xl hover:text-blue-800 cursor-pointer"
+                        className="text-md hover:text-blue-800 cursor-pointer"
                         href={link.href}
                     >
                         {link.name}
                     </a>
                 ))}
                 <a
-                    className="text-lg font-semibold bg-blue-500 py-3 px-6 rounded-full text-white cursor-pointer hover:bg-blue-600"
+                    className="text-md py-1.5 px-5 rounded-full border border-blue-500 cursor-pointer text-blue-500 hover:text-white hover:bg-blue-500"
                     href="#contact"
                 >
                     Contact
