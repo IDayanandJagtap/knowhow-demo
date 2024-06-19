@@ -2,6 +2,7 @@ import About from "./components/About";
 import Carousel from "./components/Carousel";
 import Contact from "./components/Contact";
 import Courses from "./components/Courses";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
             <About />
             <Courses />
             <Contact />
+            <Footer />
         </>
     );
 }
