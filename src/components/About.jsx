@@ -34,7 +34,7 @@ const About = () => {
     return (
         <>
             <PreAboutSection />
-            <article className="w-full p-6 py-12 lg:w-4/5 lg:mx-auto lg:mt-[-150px] xl:w-2/3 rounded-xl bg-white shadow-xl">
+            <article className="w-full p-6 py-12 z-10 lg:w-4/5 lg:mx-auto lg:mt-[-150px] xl:w-2/3 rounded-xl bg-white shadow-xl">
                 <h2 className="text-2xl text-center font-bold mb-10 lg:text-3xl xl:text-3xl ">
                     About us
                 </h2>

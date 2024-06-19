@@ -55,17 +55,19 @@ const Carousel = () => {
 
     return (
         <div
-            className="w-full relative overflow-x-auto scrollbar-hide scroll-smooth"
+            className="w-full relative overflow-x-auto scrollbar-hide scroll-smooth  h-[60vh] lg:h-auto "
             ref={carouselRef}
         >
             {/* Content */}
-            <div className={`w-[${data.length * 100}%] flex`}>
+            <div
+                className={`w-[${data.length * 100}%] flex h-full items-center`}
+            >
                 {data.map((e) => {
                     return (
                         <div className="w-full relative flex-grow-0 flex-shrink-0 lg:flex flex-row-reverse lg:justify-evenly ">
                             <img
                                 src={e.imgSrc}
-                                className="opacity-15 h-80 w-auto object-contain mx-auto lg:opacity-100 lg:h-96 xl:h-[40rem]"
+                                className="opacity-20 h-96 w-auto object-contain mx-auto lg:opacity-100 xl:h-[40rem]"
                             />
                             <article className="absolute w-full p-4 text-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex-col justify-center items-center lg:static lg:transform-none lg:flex lg:w-1/2 ">
                                 <h1 className="text-3xl my-2 font-bold lg:text-4xl xl:text-6xl">
@@ -75,7 +77,7 @@ const Carousel = () => {
                                     {e.text}
                                 </p>
                                 {e.button && (
-                                    <button className="mt-4 text-sm w-fit font-semibold bg-blue-500 py-3 px-4 rounded-full text-white cursor-pointer hover:bg-blue-600 lg:text-md xl:text-xl xl:px-6">
+                                    <button className="mt-4 text-sm w-fit font-semibold bg-blue-500 py-3 px-4 rounded-full text-white cursor-pointer hover:bg-blue-600 lg:text-md  xl:px-6">
                                         {e.button}
                                     </button>
                                 )}
