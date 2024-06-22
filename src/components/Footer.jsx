@@ -92,7 +92,7 @@ const Footer = () => {
                             />
                             <label
                                 htmlFor="newsletterEmail"
-                                className="absolute text-neutral-400 -top-2.5 left-1 peer-placeholder-shown:top-1.5 peer-placeholder-shown:left-2 peer-focus:-top-2.5 peer-focus:left-1 transition-all duration-300"
+                                className="absolute text-neutral-400 -top-2.5 left-1 peer-placeholder-shown:top-1.5 peer-placeholder-shown:left-2 peer-focus:-top-2.5 peer-focus:left-1 peer-focus:text-[10px] transition-all duration-300"
                             >
                                 Email
                             </label>

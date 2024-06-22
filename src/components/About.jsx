@@ -118,7 +118,7 @@ const PreAboutSection = () => {
 
             {/* Registration form */}
             <div className="lg:flex justify-center items-center">
-                <form className="bg-sky-900 w-full h-auto p-6 rounded-lg text-sm flex flex-col justify-center gap-6 md:w-4/5 md:mx-auto lg:rounded-full lg:w-80 lg:h-80 lg:gap-5 lg:mx-auto xl:w-96 xl:h-96 xl:text-md">
+                <form className="bg-sky-950 w-full h-auto p-6 rounded-lg text-sm flex flex-col justify-center gap-6 md:w-4/5 md:mx-auto lg:rounded-full lg:w-80 lg:h-80 lg:gap-5 lg:mx-auto xl:w-96 xl:h-96 xl:text-md">
                     <h3 className="text-lg font-bold text-center text-neutral-200 xl:text-xl">
                         Register your first free consultation
                     </h3>
