@@ -22,21 +22,21 @@ const Courses = () => {
                         title={
                             "IELTS (International English Language Testing System"
                         }
-                        text={"chamak se chand bhi dhale"}
+                        text={"Some description about the course."}
                     />
                     <Card
                         img={courseImg1}
                         title={
                             "IELTS (International English Language Testing System"
                         }
-                        text={"chamak se chand bhi dhale"}
+                        text={"Some description about the course."}
                     />
                     <Card
                         img={courseImg1}
                         title={
                             "IELTS (International English Language Testing System"
                         }
-                        text={"chamak se chand bhi dhale"}
+                        text={"Some description about the course."}
                     />
                 </div>
             </div>
