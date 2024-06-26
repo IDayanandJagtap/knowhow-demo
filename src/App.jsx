@@ -1,22 +1,17 @@
-import About from "./components/About";
-import Carousel from "./components/Carousel";
-import Contact from "./components/Contact";
-import Courses from "./components/Courses";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Home from "./components/home";
 
 function App() {
     return (
-        <>
+        <BrowserRouter>
             <Header />
-            <section className="w-full  md:px-20 md:py-6 lg:px-28 xl:px-36 2xl:px-72">
-                <Carousel />
-            </section>
-            <About />
-            <Courses />
-            <Contact />
+            <Routes>
+                <Route path={"/"} element={<Home />}></Route>
+            </Routes>
             <Footer />
-        </>
+        </BrowserRouter>
     );
 }
 

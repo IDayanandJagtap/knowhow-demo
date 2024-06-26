@@ -1,10 +1,10 @@
 import React from "react";
 
-import courseImg1 from "../assets/courses/courses1.jpg";
-import courseImg2 from "../assets/courses/courses2.jpg";
-import courseImg3 from "../assets/courses/courses3.jpg";
-import courseImg4 from "../assets/courses/courses4.jpg";
-import courseImg5 from "../assets/courses/courses5.jpg";
+import courseImg1 from "../../assets/courses/courses1.jpg";
+import courseImg2 from "../../assets/courses/courses2.jpg";
+import courseImg3 from "../../assets/courses/courses3.jpg";
+import courseImg4 from "../../assets/courses/courses4.jpg";
+import courseImg5 from "../../assets/courses/courses5.jpg";
 
 const courseList = [
     {
@@ -42,9 +42,10 @@ const Courses = () => {
             </h2>
             <div className="w-full mx-auto">
                 <div className="grid gap-6 w-full grid-cols-auto-fit-300 box-border">
-                    {courseList.map((course) => {
+                    {courseList.map((course, i) => {
                         return (
                             <Card
+                                key={i}
                                 img={course.imgSrc}
                                 title={course.title}
                                 text={course.text}

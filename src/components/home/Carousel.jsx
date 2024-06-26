@@ -1,10 +1,9 @@
 import React, { useEffect, useRef } from "react";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
-import img1 from "../assets/carousel/carousel1.png";
-import img2 from "../assets/carousel/carousel2.png";
-import img3 from "../assets/carousel/carousel3.png";
+import img1 from "../../assets/carousel/carousel1.png";
+import img2 from "../../assets/carousel/carousel2.png";
+import img3 from "../../assets/carousel/carousel3.png";
 
-const data = [
+const carouselData = [
     {
         title: "Study Abroad",
         text: "We provide best option for all academic profiles.",
@@ -60,11 +59,16 @@ const Carousel = () => {
         >
             {/* Content */}
             <div
-                className={`w-[${data.length * 100}%] flex h-full items-center`}
+                className={`w-[${
+                    carouselData.length * 100
+                }%] flex h-full items-center`}
             >
-                {data.map((e) => {
+                {carouselData.map((e, i) => {
                     return (
-                        <div className="w-full relative flex-grow-0 flex-shrink-0 lg:flex flex-row-reverse lg:justify-evenly ">
+                        <div
+                            className="w-full relative flex-grow-0 flex-shrink-0 lg:flex flex-row-reverse lg:justify-evenly "
+                            key={i}
+                        >
                             <img
                                 src={e.imgSrc}
                                 className="opacity-20 h-96 w-auto object-contain mx-auto lg:opacity-100 xl:h-[40rem]"

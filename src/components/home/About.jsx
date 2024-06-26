@@ -43,10 +43,9 @@ const About = () => {
                         className="w-full h-80 rounded-md lg:h-auto"
                         src="https://www.youtube.com/embed/oaybomYFuHU?si=4pQ7BXe3DeYb_YyA"
                         title="YouTube video player"
-                        frameborder="0"
+                        frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
+                        referrerPolicy="strict-origin-when-cross-origin"
                     ></iframe>
                     <div className="w-full text-sm">
                         <p>
