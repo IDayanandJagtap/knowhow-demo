@@ -9,6 +9,7 @@ const carouselData = [
         text: "We provide best option for all academic profiles.",
         imgSrc: img1,
         button: "Discover more",
+        href: "#contact",
     },
     {
         title: "Start your journey today with our first free consultation",
@@ -19,6 +20,8 @@ const carouselData = [
         title: "Efficient Learning Methods",
         text: "Get the complete support including education loan and accommodation.",
         imgSrc: img3,
+        button: "Let's Chat",
+        href: "#contact",
     },
 ];
 
@@ -81,9 +84,12 @@ const Carousel = () => {
                                     {e.text}
                                 </p>
                                 {e.button && (
-                                    <button className="mt-4 text-sm w-fit font-semibold bg-blue-500 py-3 px-4 rounded-full text-white cursor-pointer hover:bg-blue-600 lg:text-md  xl:px-6">
+                                    <a
+                                        className="mt-4 text-sm w-fit font-semibold border border-blue-500 py-3 px-4 rounded-full text-blue-500 cursor-pointer hover:bg-blue-500 hover:text-white lg:text-md  xl:px-6"
+                                        href={e.href}
+                                    >
                                         {e.button}
-                                    </button>
+                                    </a>
                                 )}
                             </article>
                         </div>
