@@ -2,7 +2,10 @@ import React from "react";
 
 const Contact = () => {
     return (
-        <div className="bg-blue-500 px-8 py-12 md:px-20 lg:px-28 xl:px-36 2xl:px-72 lg:py-20  lg:bg-gradient-to-r from-blue-600 via-blue-400 to-blue-600">
+        <div
+            className="bg-blue-500 px-8 py-12 md:px-20 lg:px-28 xl:px-36 2xl:px-72 lg:py-20  lg:bg-gradient-to-r from-blue-600 via-blue-400 to-blue-600"
+            id="contact"
+        >
             <div className="flex flex-col gap-10 md:flex-row md:mt-8 lg:gap-12 xl:gap-28">
                 <section className="flex flex-col gap-4 md:mt-4 xl:text-md lg:mt-10">
                     <h2 className="text-2xl font-bold mb-2 lg:text-3xl xl:text-3xl">

@@ -16,7 +16,7 @@ const Header = () => {
     };
 
     return (
-        <nav className="border-t-4 border-t-blue-600 bg-white px-8 py-4 flex justify-between items-center shadow-md md:px-20 md:py-4 lg:px-28 xl:px-36 2xl:px-72 md:border-t-6">
+        <nav className="sticky top-0 left-0 z-50 border-t-4 border-t-blue-600 bg-white px-8 py-4 flex justify-between items-center shadow-md md:px-20 md:py-4 lg:px-28 xl:px-36 2xl:px-72 md:border-t-6">
             {/* Title/ logo */}
             <h1 className="text-lg font-bold md:text-2xl lg:text-2xl">
                 KnowHow

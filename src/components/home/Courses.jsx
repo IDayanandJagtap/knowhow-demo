@@ -36,7 +36,10 @@ const courseList = [
 
 const Courses = () => {
     return (
-        <section className=" bg-blue-50 px-8 py-12 md:px-20 lg:px-28 xl:px-36 2xl:px-72 lg:py-20  ">
+        <section
+            className="mt-8 bg-blue-50 px-8 py-12 md:px-20 lg:px-28 xl:px-36 2xl:px-72 lg:py-20  "
+            id="courses"
+        >
             <h2 className="text-2xl text-center font-bold mb-10 lg:text-3xl xl:text-3xl ">
                 Popular Courses
             </h2>
